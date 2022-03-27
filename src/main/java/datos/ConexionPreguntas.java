@@ -8,8 +8,8 @@ public class ConexionPreguntas {
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "admin";
 
-    public static void getConection() throws SQLException {
-        DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
+    public static Connection getConection() throws SQLException {
+        return DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD);
     }
 
     public static void close(ResultSet rs) throws SQLException {
