@@ -7,19 +7,19 @@ import java.util.*;
 
 public class CategoriaA {
 
-    int numero1 = (int) (Math.random() * 5);
+    int numero = (int) (Math.random() * 5);
     int i = 0;
 
     public void pregunta1() throws SQLException {
         CategoriaPreguntaDAO pregunta = new CategoriaPreguntaDAO();
         List<CategoriaPregunta> preguntas = pregunta.seleccionar();
-        System.out.println("pregunta 1 : " + preguntas.get(numero1));
+        System.out.println("pregunta 1 : " + preguntas.get(numero));
     }
 
     public void opciones1() throws SQLException {
         RespuestasDAO respuesta1 = new RespuestasDAO();
         List<Respuestas> respuestas = respuesta1.seleccionar();
-        switch (numero1) {
+        switch (numero) {
             case 0:
                 for (i = 0; i <= 3; i++) {
                     System.out.println(respuestas.get(i));
