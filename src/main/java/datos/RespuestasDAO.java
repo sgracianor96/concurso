@@ -7,8 +7,7 @@ import java.util.*;
 public class RespuestasDAO {
 
     private static final String SQL_SELECT = "SELECT idrespuestas, numero_pregunta, respuestas, booleana FROM concurso.respuestas";
-    private static final String SQLSELECTA = "SELECT respuestas, booleana FROM concurso.respuestas";
-
+    
     public List<Respuestas> seleccionar() throws SQLException {
         Connection conn = null;
         PreparedStatement stmt = null;
