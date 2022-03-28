@@ -45,7 +45,7 @@ public class CategoriaPregunta {
 
     @Override
     public String toString() {
-        return "{" + "idcategoriaPregunta=" + idcategoriaPregunta + ", categoria=" + categoria + ", pregunta=" + pregunta + '}';
+        return pregunta;
     }
 
     

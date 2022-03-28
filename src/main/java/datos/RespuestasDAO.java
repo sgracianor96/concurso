@@ -7,6 +7,7 @@ import java.util.*;
 public class RespuestasDAO {
 
     private static final String SQL_SELECT = "SELECT idrespuestas, numero_pregunta, respuestas, booleana FROM concurso.respuestas";
+    private static final String SQLSELECTA = "SELECT respuestas, booleana FROM concurso.respuestas";
 
     public List<Respuestas> seleccionar() throws SQLException {
         Connection conn = null;
@@ -19,13 +20,14 @@ public class RespuestasDAO {
         stmt = conn.prepareStatement(SQL_SELECT);
         rs = stmt.executeQuery();
         while (rs.next()) {
-            int idrespuestas = rs.getInt("idrespuestas");
-            String numeroPregunta = rs.getString("numero_pregunta");
+//            int idrespuestas = rs.getInt("idrespuestas");
+//            String numeroPregunta = rs.getString("numero_pregunta");
             String answer = rs.getString("respuestas");
             String booleana = rs.getString("booleana");
-            respuesta = new Respuestas(idrespuestas, numeroPregunta, answer, booleana);
+            respuesta = new Respuestas(answer, booleana);
             respuestas.add(respuesta);
         }
         return respuestas;
     }
+
 }

@@ -3,8 +3,8 @@ package domain;
 public class Respuestas {
     private int idrespuestas;
     private String numeroPregunta;
-    private String respuestas;
-    private String booleana;
+    public  String respuestas;
+    public  String booleana;
 
     public Respuestas() {
     }
@@ -13,9 +13,9 @@ public class Respuestas {
         this.idrespuestas = idrespuestas;
     }
 
-    public Respuestas(int idrespuestas, String numeroPregunta, String respuestas, String booleana) {
-        this.idrespuestas = idrespuestas;
-        this.numeroPregunta = numeroPregunta;
+    public Respuestas(String respuestas, String booleana) {
+//        this.idrespuestas = idrespuestas;
+//        this.numeroPregunta = numeroPregunta;
         this.respuestas = respuestas;
         this.booleana = booleana;
     }
@@ -54,7 +54,7 @@ public class Respuestas {
 
     @Override
     public String toString() {
-        return "{" + "idrespuestas=" + idrespuestas + ", numeroPregunta=" + numeroPregunta + ", respuestas=" + respuestas + ", booleana=" + booleana + '}';
+        return  respuestas;
     }
     
     
