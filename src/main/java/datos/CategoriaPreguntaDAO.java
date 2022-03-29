@@ -4,11 +4,11 @@ import domain.CategoriaPregunta;
 import java.sql.*;
 import java.util.*;
 
-public class CategoriaPreguntaDAO {
+public class CategoriaPreguntaDAO {  //Clase con la finalidad de hacer la funcion de SELECT para las preguntas en SQL en nuestra base de datos
 
     private static final String SQL_SELECT = "SELECT idcategoria_pregunta, categoria, pregunta FROM concurso.categoria_pregunta";
 
-    public List<CategoriaPregunta> seleccionar() throws SQLException {
+    public List<CategoriaPregunta> seleccionar() throws SQLException  {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;

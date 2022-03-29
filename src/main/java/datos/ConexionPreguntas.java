@@ -2,7 +2,7 @@ package datos;
 
 import java.sql.*;
 
-public class ConexionPreguntas {
+public class ConexionPreguntas { //Clase utilizada para crear los metodos de conexion a nuestra base de datos en localhost
 
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/concurso?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private static final String JDBC_USER = "root";

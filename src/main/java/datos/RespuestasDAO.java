@@ -4,7 +4,7 @@ import domain.Respuestas;
 import java.sql.*;
 import java.util.*;
 
-public class RespuestasDAO {
+public class RespuestasDAO {     // clase para crear la funcion SELECT para las respuestas de nuestra base de datos
 
     private static final String SQL_SELECT = "SELECT idrespuestas, numero_pregunta, respuestas, booleana FROM concurso.respuestas";
     

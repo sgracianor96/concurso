@@ -5,7 +5,7 @@ import domain.Respuestas;
 import java.sql.SQLException;
 import java.util.List;
 
-public class CategoriaD {
+public class CategoriaD {    //Clase para poder mostrar la cuarta pregunta de forma aleatoria con sus respectivas posibles respuestas
     int numero4 = (int) (Math.random() * 5 + 15);
     int i = 0;
     

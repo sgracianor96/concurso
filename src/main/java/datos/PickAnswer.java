@@ -8,9 +8,8 @@ import java.sql.SQLException;
 import java.util.*;
 
 
-public class PickAnswer {
+public class PickAnswer { // clase creada para poder obtener el valor booleano en la base de datos en mySQL
     public String ans;
-   // private  String SQL_SELECT = "SELECT booleana FROM concurso.respuestas WHERE respuestas =" + "'" + ans + "'";
     
     public List<RespuestasA> seleccionarA(String answer) throws SQLException {
         Connection conn = null;

@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
-public class MonologoA {
+public class MonologoA { //clase que alberga el metodo juego() para inicializar el juego en su totalidad(incluyendo las condiciones de victoria)
 
     public void juego() throws SQLException {
         CategoriaA pregunta1 = new CategoriaA();

@@ -5,12 +5,12 @@ import domain.Respuestas;
 import java.sql.SQLException;
 import java.util.*;
 
-public class CategoriaA {
+public class CategoriaA { //Clase para poder mostrar la primer pregunta de forma aleatoria con sus respectivas posibles respuestas
 
     int numero = (int) (Math.random() * 5);
     int i = 0;
 
-    public void pregunta1() throws SQLException {
+    public void pregunta1() throws SQLException  {
         System.out.println("Bienvenido al concurso");
         CategoriaPreguntaDAO pregunta = new CategoriaPreguntaDAO();
         List<CategoriaPregunta> preguntas = pregunta.seleccionar();

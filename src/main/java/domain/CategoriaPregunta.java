@@ -1,6 +1,6 @@
 package domain;
 
-public class CategoriaPregunta {
+public class CategoriaPregunta {    //clase creada para poder obtener los valores de las preguntas y asi mismo devolver ese valor
 
     private int idcategoriaPregunta;
     private String categoria;

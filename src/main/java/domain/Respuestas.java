@@ -1,6 +1,6 @@
 package domain;
 
-public class Respuestas {
+public class Respuestas {   // al igual que la clase CategoriaPregunta sirve para obtener los valores de las respuestas y asi mismo dedvolverlos
     private int idrespuestas;
     private String numeroPregunta;
     public  String respuestas;
