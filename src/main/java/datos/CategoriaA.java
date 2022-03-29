@@ -11,6 +11,7 @@ public class CategoriaA {
     int i = 0;
 
     public void pregunta1() throws SQLException {
+        System.out.println("Bienvenido al concurso");
         CategoriaPreguntaDAO pregunta = new CategoriaPreguntaDAO();
         List<CategoriaPregunta> preguntas = pregunta.seleccionar();
         System.out.println("pregunta 1 : " + preguntas.get(numero));
